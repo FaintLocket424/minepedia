@@ -17,6 +17,9 @@
 		],
 		"main": [
 			"space.faintlocket.minepedia.Minepedia"
+		],
+		"modmenu": [
+			"space.faintlocket.minepedia.MinepediaModMenuApiImpl"
 		]
 	},
 	"mixins": [
@@ -26,5 +29,10 @@
 		"fabricloader": ">=${loader_version}",
 		"fabric": "*",
 		"minecraft": "${minecraft_version}"
+	},
+	"custom": {
+		"modmenu": {
+			"update_checker": true
+		}
 	}
 }
