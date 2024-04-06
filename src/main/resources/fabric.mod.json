@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "minepedia",
+	"version": "${version}",
+	"name": "Minepedia",
+	"description": "",
+	"authors": [
+		"FaintLocket424"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/minepedia/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"space.faintlocket.minepedia.client.MinepediaClient"
+		],
+		"main": [
+			"space.faintlocket.minepedia.Minepedia"
+		]
+	},
+	"mixins": [
+		"minepedia.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"fabric": "*",
+		"minecraft": "${minecraft_version}"
+	}
+}
